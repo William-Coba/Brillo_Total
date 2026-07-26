@@ -3,9 +3,9 @@ import { ref, computed } from 'vue'
 import emailjs from '@emailjs/browser'
 
 // ── Credenciales EmailJS ──────────────────────────
-const SERVICE_ID  = 'service_5o6d9v4'
-const TEMPLATE_ID = 'template_wq0bfcl'
-const PUBLIC_KEY  = '9Uc_ovBsLtKu0A8sJ'
+const SERVICE_ID  = import.meta.env.VITE_SERVICE_ID
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
+const PUBLIC_KEY  = import.meta.env.VITE_PUBLIC_KEY
 
 // ── Estado del formulario ─────────────────────────
 const nombre   = ref('')
